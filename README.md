@@ -26,7 +26,7 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 - [ ] Sass
 - [ ] HTML
 - [ ] CSS
-- [ ] JS
+- [x] JS
 - [ ] React Bootstrap
 - [ ] Node JS
 - [ ] Jest
@@ -34,6 +34,6 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 - [ ] SQL
 - [ ] GraphOL
 - [ ] Sequelize
-- [ ] Git
+- [x] Git
 - [ ] Styled-Components
 - [ ] Parcel-Bundler
