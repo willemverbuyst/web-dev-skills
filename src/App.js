@@ -6,6 +6,7 @@ import ChartLogo from './components/ChartLogo';
 import JavaScriptLogo from './components/JavaScriptLogo';
 import GitLogo from './components/GitLogo';
 import ReduxLogo from './components/ReduxLogo';
+import HtmlLogo from './components/HtmlLogo';
 
 function Group() {
   const ref = useRef();
@@ -23,6 +24,7 @@ function Group() {
       <ChartLogo position={[2, 1.7, -0.5]} />
       <GitLogo position={[-1.6, -1.8, 1]} />
       <ReduxLogo position={[2, 0, 0]} />
+      <HtmlLogo position={[1.5, 0, -2]} />
     </group>
   );
 }
