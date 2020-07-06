@@ -10,6 +10,7 @@ import HtmlLogo from './components/HtmlLogo';
 import CssLogo from './components/CssLogo';
 import SassLogo from './components/SassLogo';
 import NodeJsLogo from './components/NodeJsLogo';
+import JestLogo from './components/JestLogo';
 
 function Group() {
   const ref = useRef();
@@ -31,6 +32,7 @@ function Group() {
       <CssLogo position={[-1.3, 0.2, -2]} />
       <SassLogo position={[0, 2, 0]} />
       <NodeJsLogo position={[0, -1.5, 0]} />
+      <JestLogo position={[-1.5, -2, -2]} />
     </group>
   );
 }
