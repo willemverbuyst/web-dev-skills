@@ -22,7 +22,7 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 
 - [x] React
 - [x] Chart-js
-- [ ] Redux
+- [x] Redux
 - [ ] Sass
 - [ ] HTML
 - [ ] CSS
