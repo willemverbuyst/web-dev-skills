@@ -9,7 +9,7 @@ export default function ChartLogo(props) {
       <meshBasicMaterial attach="material" color="#fff" />
       <HTML scaleFactor={2.5}>
         <img src={chartL} alt="react" />
-        <h2 style={{ fontSize: '3rem' }}>chart-js</h2>
+        <h2 style={{ fontSize: '3rem' }}>Chart-js</h2>
       </HTML>
     </mesh>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { HTML } from 'drei';
-import reactL from '../img/react.png';
+import javaScriptL from '../img/js.png';
 
 export default function ReactLogo(props) {
   return (
@@ -8,8 +8,8 @@ export default function ReactLogo(props) {
       <sphereBufferGeometry attach="geometry" args={[0.001, 0.001, 0.001]} />
       <meshBasicMaterial attach="material" color="#fff" />
       <HTML scaleFactor={2.5}>
-        <img src={reactL} alt="react" />
-        <h2 style={{ fontSize: '3rem' }}>React</h2>
+        <img src={javaScriptL} alt="react" />
+        <h2 style={{ fontSize: '3rem' }}>JavaScript</h2>
       </HTML>
     </mesh>
   );
