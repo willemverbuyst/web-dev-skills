@@ -9,6 +9,7 @@ import ReduxLogo from './components/ReduxLogo';
 import HtmlLogo from './components/HtmlLogo';
 import CssLogo from './components/CssLogo';
 import SassLogo from './components/SassLogo';
+import NodeJsLogo from './components/NodeJsLogo';
 
 function Group() {
   const ref = useRef();
@@ -29,6 +30,7 @@ function Group() {
       <HtmlLogo position={[1.5, 0, -2]} />
       <CssLogo position={[-1.3, 0.2, -2]} />
       <SassLogo position={[0, 2, 0]} />
+      <NodeJsLogo position={[0, -1.5, 0]} />
     </group>
   );
 }

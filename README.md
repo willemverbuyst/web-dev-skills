@@ -23,12 +23,12 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 - [x] React
 - [x] Chart-js
 - [x] Redux
-- [ ] Sass
+- [x] Sass
 - [x] HTML
 - [x] CSS
 - [x] JS
 - [ ] React Bootstrap
-- [ ] Node JS
+- [x] Node JS
 - [ ] Jest
 - [ ] React Native
 - [ ] SQL
