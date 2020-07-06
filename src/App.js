@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Canvas, useFrame } from 'react-three-fiber';
 import { OrbitControls, Stars } from 'drei';
 import ReactLogo from './components/ReactLogo';
+import ChartLogo from './components/ChartLogo';
 
 function Group() {
   const ref = useRef();
@@ -15,6 +16,7 @@ function Group() {
   return (
     <group ref={ref}>
       <ReactLogo position={[-2.2, 0, 0]} />
+      <ChartLogo position={[2, 1.7, -0.5]} />
     </group>
   );
 }

@@ -20,7 +20,8 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 
 ## List
 
-- [ ] React
+- [x] React
+- [x] Chart-js
 - [ ] Redux
 - [ ] Sass
 - [ ] HTML
