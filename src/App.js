@@ -7,6 +7,7 @@ import JavaScriptLogo from './components/JavaScriptLogo';
 import GitLogo from './components/GitLogo';
 import ReduxLogo from './components/ReduxLogo';
 import HtmlLogo from './components/HtmlLogo';
+import CssLogo from './components/CssLogo';
 
 function Group() {
   const ref = useRef();
@@ -25,6 +26,7 @@ function Group() {
       <GitLogo position={[-1.6, -1.8, 1]} />
       <ReduxLogo position={[2, 0, 0]} />
       <HtmlLogo position={[1.5, 0, -2]} />
+      <CssLogo position={[-1.3, 0.2, -2]} />
     </group>
   );
 }

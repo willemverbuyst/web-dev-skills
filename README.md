@@ -24,8 +24,8 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 - [x] Chart-js
 - [x] Redux
 - [ ] Sass
-- [ ] HTML
-- [ ] CSS
+- [x] HTML
+- [x] CSS
 - [x] JS
 - [ ] React Bootstrap
 - [ ] Node JS
