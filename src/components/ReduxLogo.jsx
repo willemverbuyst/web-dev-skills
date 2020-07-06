@@ -2,7 +2,7 @@ import React from 'react';
 import { HTML } from 'drei';
 import reduxL from '../img/redux.png';
 
-export default function ReactLogo(props) {
+export default function ReduxLogo(props) {
   return (
     <mesh {...props}>
       <sphereBufferGeometry attach="geometry" args={[0.001, 0.001, 0.001]} />

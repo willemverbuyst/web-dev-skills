@@ -1,15 +1,15 @@
 import React from 'react';
 import { HTML } from 'drei';
-import cssL from '../img/css.png';
+import sassL from '../img/sass.png';
 
-export default function CssLogo(props) {
+export default function SassLogo(props) {
   return (
     <mesh {...props}>
       <sphereBufferGeometry attach="geometry" args={[0.001, 0.001, 0.001]} />
       <meshBasicMaterial attach="material" color="#fff" />
       <HTML scaleFactor={2.5}>
-        <img src={cssL} alt="css" />
-        <h2 style={{ fontSize: '3rem' }}>CSS</h2>
+        <img src={sassL} alt="sass" />
+        <h2 style={{ fontSize: '3rem' }}>SASS</h2>
       </HTML>
     </mesh>
   );
