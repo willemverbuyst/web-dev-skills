@@ -29,11 +29,11 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 - [x] JS
 - [ ] React Bootstrap
 - [x] Node JS
-- [ ] Jest
+- [x] Jest
 - [ ] React Native
 - [ ] SQL
 - [ ] GraphOL
 - [ ] Sequelize
 - [x] Git
 - [ ] Styled-Components
-- [ ] Parcel-Bundler
+- [x] Parcel-Bundler
