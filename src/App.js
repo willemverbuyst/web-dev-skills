@@ -15,6 +15,7 @@ import ParcelLogo from './components/ParcelLogo';
 import SqlLogo from './components/Sqlogo';
 import ReactBootstrapLogo from './components/ReachtBootstrapLogo';
 import StyledComponentsLogo from './components/StyledComponentsLogo';
+import SequelizeLogo from './components/SequelizeLogo';
 
 function Group() {
   const ref = useRef();
@@ -41,6 +42,7 @@ function Group() {
       <SqlLogo position={[2, -2, 0.4]} />
       <ReactBootstrapLogo position={[-2, 2, -2]} />
       <StyledComponentsLogo position={[-3, 1.5, -1]} />
+      <SequelizeLogo position={[2, -1.8, -2]} />
     </group>
   );
 }
