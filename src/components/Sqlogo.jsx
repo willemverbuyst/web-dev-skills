@@ -9,7 +9,7 @@ export default function SqlLogo(props) {
       <meshBasicMaterial attach="material" color="#fff" />
       <HTML scaleFactor={2.5}>
         <img src={SqlL} alt="sql" />
-        <h2 style={{ fontSize: '3rem' }}>sql</h2>
+        <h2 style={{ fontSize: '3rem' }}>SQL</h2>
       </HTML>
     </mesh>
   );
