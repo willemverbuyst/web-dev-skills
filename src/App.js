@@ -14,6 +14,7 @@ import JestLogo from './components/JestLogo';
 import ParcelLogo from './components/ParcelLogo';
 import SqlLogo from './components/Sqlogo';
 import ReactBootstrapLogo from './components/ReachtBootstrapLogo';
+import StyledComponentsLogo from './components/StyledComponentsLogo';
 
 function Group() {
   const ref = useRef();
@@ -39,6 +40,7 @@ function Group() {
       <ParcelLogo position={[-3.5, -1.4, -1]} />
       <SqlLogo position={[2, -2, 0.4]} />
       <ReactBootstrapLogo position={[-2, 2, -2]} />
+      <StyledComponentsLogo position={[-3, 1.5, -1]} />
     </group>
   );
 }
