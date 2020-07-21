@@ -27,13 +27,13 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 - [x] HTML
 - [x] CSS
 - [x] JS
-- [ ] React Bootstrap
+- [x] React Bootstrap
 - [x] Node JS
 - [x] Jest
 - [ ] React Native
-- [ ] SQL
-- [ ] GraphOL
-- [ ] Sequelize
+- [x] SQL
+- [x] GraphOL
+- [x] Sequelize
 - [x] Git
-- [ ] Styled-Components
+- [x] Styled-Components
 - [x] Parcel-Bundler
