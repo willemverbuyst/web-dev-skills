@@ -15,6 +15,7 @@ import ReduxLogo from './components/ReduxLogo';
 import SassLogo from './components/SassLogo';
 import SequelizeLogo from './components/SequelizeLogo';
 import SqlLogo from './components/SqlLogo';
+import StyledComponentsLogo from './components/StyledComponentsLogo';
 
 function Group() {
   const ref = useRef();
@@ -41,6 +42,7 @@ function Group() {
       <SassLogo position={[0, 2, 0]} />
       <SequelizeLogo position={[2, -1.8, -2]} />
       <SqlLogo position={[2, -2, 0.4]} />
+      <StyledComponentsLogo position={[-3, 1.5, -1]} />
     </group>
   );
 }
