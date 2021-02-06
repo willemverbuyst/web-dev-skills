@@ -1,6 +1,7 @@
-import React, { useRef } from 'react';
-import { Canvas, useFrame } from 'react-three-fiber';
-import { OrbitControls } from '@react-three/drei';
+import * as THREE from 'three';
+import React, { useRef, Suspense } from 'react';
+import { Canvas, useFrame, useLoader } from 'react-three-fiber';
+import { OrbitControls, Box, Text } from '@react-three/drei';
 import AngularLogo from './components/AngularLogo';
 import AntDesignLogo from './components/AntDesignLogo';
 import ChartLogo from './components/ChartLogo';
@@ -22,6 +23,7 @@ import SqlLogo from './components/SqlLogo';
 import StyledComponentsLogo from './components/StyledComponentsLogo';
 import SvelteLogo from './components/SvelteLogo';
 import TsLogo from './components/TsLogo';
+import img from './img/dashboard-3.png';
 
 function Group() {
   const ref = useRef();
@@ -59,6 +61,21 @@ function Group() {
   );
 }
 
+function Project(meshProps) {
+  const texture = useLoader(THREE.TextureLoader, img);
+  return (
+    <mesh>
+      <Box
+        position={[-4, 2, 1]}
+        args={[1, 1, 1]} // Width, Height and Depth of the box
+        {...meshProps} // All THREE.Mesh props are valid
+      >
+        <meshBasicMaterial attach="material" map={texture} />
+      </Box>
+    </mesh>
+  );
+}
+
 export default function App() {
   return (
     <>
@@ -67,6 +84,12 @@ export default function App() {
         <pointLight position={[10, 10, 10]} />
         <Group />
         <OrbitControls />
+        <Suspense fallback={null}>
+          <Project />
+        </Suspense>
+        {/* <Text position={[-5, 3.5, 0]} fontSize="0.5">
+          Hi I'm Willem!
+        </Text> */}
       </Canvas>
     </>
   );
