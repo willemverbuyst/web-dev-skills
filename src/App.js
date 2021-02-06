@@ -28,7 +28,6 @@ export default function App() {
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Group />
-        <Stars />
         <OrbitControls />
       </Canvas>
     </>
