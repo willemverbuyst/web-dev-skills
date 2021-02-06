@@ -8,6 +8,7 @@ import HtmlLogo from './components/HtmlLogo';
 import JestLogo from './components/JestLogo';
 import JsLogo from './components/JsLogo';
 import NodeLogo from './components/NodeLogo';
+import ParcelLogo from './components/ParcelLogo';
 
 function Group() {
   const ref = useRef();
@@ -27,6 +28,7 @@ function Group() {
       <JestLogo position={[-1.5, -2, -2]} />
       <JsLogo position={[0.5, 0.5, 0.5]} />
       <NodeLogo position={[0, -1.5, 0]} />
+      <ParcelLogo position={[-3.5, -1.4, -1]} />
     </group>
   );
 }
