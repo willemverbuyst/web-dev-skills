@@ -1,6 +1,6 @@
 import React from 'react';
 import { Html} from '@react-three/drei';
-import chartImg from '../img/chart-js.png';
+import cssImg from '../img/css.png';
 
 export default function ChartLogo(props) {
   return (
@@ -9,7 +9,7 @@ export default function ChartLogo(props) {
       <meshBasicMaterial attach="material" color="#fff" />
       <Html scaleFactor={2.5}>
         <a href="https://www.chartjs.org/">
-          <img src={chartImg} alt="chart-js" target="_blank"/>
+          <img src={cssImg} alt="css" target="_blank"/>
         </a>
       </Html>
     </mesh>
