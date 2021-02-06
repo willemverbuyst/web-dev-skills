@@ -18,6 +18,7 @@ import SassLogo from './components/SassLogo';
 import SequelizeLogo from './components/SequelizeLogo';
 import SqlLogo from './components/SqlLogo';
 import StyledComponentsLogo from './components/StyledComponentsLogo';
+import SvelteLogo from './components/SvelteLogo';
 import TsLogo from './components/TsLogo';
 
 function Group() {
@@ -42,12 +43,13 @@ function Group() {
       <NodeLogo position={[0, -1.5, 0]} />
       <ParcelLogo position={[-3.5, -1.4, -1]} />
       <ReactBootstrapLogo position={[-2, 2, -2]} />
-      <ReactLogo position={[-2.2, 0, 0]} />
+      <ReactLogo position={[-2.2, -3, 1]} />
       <ReduxLogo position={[2, 0, 0]} />
       <SassLogo position={[0, 2, 0]} />
       <SequelizeLogo position={[2, -1.8, -2]} />
       <SqlLogo position={[2, -2, 0.4]} />
       <StyledComponentsLogo position={[-3, 1.5, -1]} />
+      <SvelteLogo position={[-2, -2, -3]} />
       <TsLogo position={[3, 0.5, 0.5]} />
     </group>
   );
