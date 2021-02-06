@@ -13,6 +13,7 @@ import ReactBootstrapLogo from './components/ReactBootstrapLogo';
 import ReactLogo from './components/ReactLogo';
 import ReduxLogo from './components/ReduxLogo';
 import SassLogo from './components/SassLogo';
+import SequelizeLogo from './components/SequelizeLogo';
 
 function Group() {
   const ref = useRef();
@@ -37,6 +38,7 @@ function Group() {
       <ReactLogo position={[-2.2, 0, 0]} />
       <ReduxLogo position={[2, 0, 0]} />
       <SassLogo position={[0, 2, 0]} />
+      <SequelizeLogo position={[2, -1.8, -2]} />
     </group>
   );
 }
