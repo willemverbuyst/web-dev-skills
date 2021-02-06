@@ -74,16 +74,16 @@ function ProjectOne(meshProps) {
 
   useFrame(
     () => (
-      (ref.current.rotation.z += 0.001),
-      (ref.current.rotation.x += 0.001),
-      (ref.current.rotation.y += 0.001)
+      (ref.current.rotation.z += 0.0),
+      (ref.current.rotation.x += 0.005),
+      (ref.current.rotation.y += 0.0)
     )
   );
 
   return (
     <>
       <mesh ref={ref}>
-        <Box position={[0, 0, 0]} args={[3, 3, 3]} {...meshProps}>
+        <Box position={[-2, 2, 0]} args={[1, 1, 1]} {...meshProps}>
           <meshStandardMaterial map={texture1} attachArray="material" />
           <meshStandardMaterial map={texture2} attachArray="material" />
           <meshStandardMaterial map={texture3} attachArray="material" />
@@ -113,7 +113,7 @@ function ProjectTwo(meshProps) {
   return (
     <>
       <mesh ref={ref}>
-        <Box position={[0, 0, 0]} args={[1, 1, 1]} {...meshProps}>
+        <Box position={[-2, -2, 0]} args={[1, 1, 1]} {...meshProps}>
           <meshStandardMaterial map={texture1} attachArray="material" />
           <meshStandardMaterial map={texture2} attachArray="material" />
           <meshStandardMaterial map={texture3} attachArray="material" />
@@ -132,10 +132,11 @@ export default function App() {
       <Canvas style={{ height: '100vh' }}>
         <ambientLight />
         <OrbitControls />
-        <Suspense fallback={null}>
+        {/* <Suspense fallback={null}>
           <ProjectOne />
-          {/* <ProjectTwo /> */}
-        </Suspense>
+          <ProjectTwo />
+        </Suspense> */}
+        <Group />
       </Canvas>
     </div>
   );
