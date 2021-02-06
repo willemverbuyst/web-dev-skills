@@ -8,6 +8,7 @@ canvas {
   padding: 0;
   color: #ccc;
   text-align: center;
+  background-color: transparent;
 }
 
 body {
@@ -29,4 +30,15 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 0.5;
+}
+
+.canvas-container {
+  position: relative;
+}
+
+.canvasTwo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
