@@ -1,9 +1,34 @@
-function App() {
+import React, { useRef } from 'react';
+import { Canvas, useFrame } from 'react-three-fiber';
+import { OrbitControls, Stars } from '@react-three/drei';
+import ChartLogo from './components/ChartLogo';
+
+function Group() {
+  const ref = useRef();
+  useFrame(
+    () => (
+      (ref.current.rotation.z += 0.0005),
+      (ref.current.rotation.x += 0.005),
+      (ref.current.rotation.y += 0.007)
+    )
+  );
   return (
-    <div>
-      <header>WEB DEV</header>
-    </div>
+    <group ref={ref}>
+      <ChartLogo position={[2, 1.7, -0.5]} />
+    </group>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <Canvas style={{ height: '100vh' }}>
+        <ambientLight />
+        <pointLight position={[10, 10, 10]} />
+        <Group />
+        <Stars />
+        <OrbitControls />
+      </Canvas>
+    </>
+  );
+}
