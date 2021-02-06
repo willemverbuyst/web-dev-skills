@@ -23,7 +23,9 @@ import SqlLogo from './components/SqlLogo';
 import StyledComponentsLogo from './components/StyledComponentsLogo';
 import SvelteLogo from './components/SvelteLogo';
 import TsLogo from './components/TsLogo';
-import img from './img/dashboard-3.png';
+import imgDashboardOne from './img/dashboard-3.png';
+import imgDashboardTwo from './img/dashboard-4.png';
+import imgDashboardThree from './img/dashboard-5.png';
 
 function Group() {
   const ref = useRef();
@@ -62,15 +64,32 @@ function Group() {
 }
 
 function Project(meshProps) {
-  const texture = useLoader(THREE.TextureLoader, img);
+  const ref = useRef();
+  const texture1 = useLoader(THREE.TextureLoader, imgDashboardOne);
+  const texture2 = useLoader(THREE.TextureLoader, imgDashboardTwo);
+  const texture3 = useLoader(THREE.TextureLoader, imgDashboardThree);
+
+  useFrame(
+    () => (
+      (ref.current.rotation.z += 0.001),
+      (ref.current.rotation.x += 0.001),
+      (ref.current.rotation.y += 0.001)
+    )
+  );
+
   return (
-    <mesh>
+    <mesh ref={ref}>
       <Box
-        position={[-4, 2, 1]}
+        position={[0, 0, 0]}
         args={[1, 1, 1]} // Width, Height and Depth of the box
         {...meshProps} // All THREE.Mesh props are valid
       >
-        <meshBasicMaterial attach="material" map={texture} />
+        <meshStandardMaterial map={texture1} attachArray="material" />
+        <meshStandardMaterial map={texture2} attachArray="material" />
+        <meshStandardMaterial map={texture3} attachArray="material" />
+        <meshStandardMaterial map={texture2} attachArray="material" />
+        <meshStandardMaterial map={texture1} attachArray="material" />
+        <meshStandardMaterial map={texture3} attachArray="material" />
       </Box>
     </mesh>
   );
@@ -81,12 +100,11 @@ export default function App() {
     <>
       <Canvas style={{ height: '100vh' }}>
         <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Group />
         <OrbitControls />
         <Suspense fallback={null}>
           <Project />
         </Suspense>
+        <Group />
         {/* <Text position={[-5, 3.5, 0]} fontSize="0.5">
           Hi I'm Willem!
         </Text> */}
