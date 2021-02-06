@@ -11,5 +11,22 @@ canvas {
 }
 
 body {
-  background-image: radial-gradient(circle at 50% 43%, #011027, #000110 70%);
+  background-image: radial-gradient(circle at 50% 50%, #011027, #000110 80%);
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 4rem;
+  margin-top: 1rem;
+  transition: 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.5;
 }

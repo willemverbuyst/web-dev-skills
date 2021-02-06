@@ -8,9 +8,10 @@ export default function ChartLogo(props) {
       <sphereBufferGeometry attach="geometry" args={[0.001, 0.001, 0.001]} />
       <meshBasicMaterial attach="material" color="#fff" />
       <Html scaleFactor={2.5}>
-        <a href="https://www.chartjs.org/">
-          <img src={chartImg} alt="chart-js" target="_blank"/>
-        </a>
+        <div class="tooltip">
+          <img src={chartImg} alt="chart-js"/>
+          <span class="tooltiptext">chartjs</span>
+        </div>
       </Html>
     </mesh>
   );
