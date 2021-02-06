@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Canvas, useFrame } from 'react-three-fiber';
 import { OrbitControls } from '@react-three/drei';
 import AngularLogo from './components/AngularLogo';
+import AntDesignLogo from './components/AntDesignLogo';
 import ChartLogo from './components/ChartLogo';
 import CssLogo from './components/CssLogo';
 import GitLogo from './components/GitLogo';
@@ -34,6 +35,7 @@ function Group() {
   return (
     <group ref={ref}>
       <AngularLogo position={[1, 3, -3]} />
+      <AntDesignLogo position={[-2.1, -3, 3]} />
       <ChartLogo position={[2, 1.7, -0.5]} />
       <CssLogo position={[-1.3, 0.2, -2]} />
       <GitLogo position={[-1.6, -1.8, 1]} />
