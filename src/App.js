@@ -4,6 +4,7 @@ import { OrbitControls } from '@react-three/drei';
 import ChartLogo from './components/ChartLogo';
 import CssLogo from './components/CssLogo';
 import GitLogo from './components/GitLogo';
+import HtmlLogo from './components/HtmlLogo';
 
 function Group() {
   const ref = useRef();
@@ -19,6 +20,7 @@ function Group() {
       <ChartLogo position={[2, 1.7, -0.5]} />
       <CssLogo position={[-1.3, 0.2, -2]} />
       <GitLogo position={[-1.6, -1.8, 1]} />
+      <HtmlLogo position={[1.5, 0, -2]} />
     </group>
   );
 }
