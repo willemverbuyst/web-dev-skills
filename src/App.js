@@ -2,27 +2,27 @@ import * as THREE from 'three';
 import React, { useRef, Suspense } from 'react';
 import { Canvas, useFrame, useLoader } from 'react-three-fiber';
 import { OrbitControls, Box, Text } from '@react-three/drei';
-import AngularLogo from './components/AngularLogo';
-import AntDesignLogo from './components/AntDesignLogo';
-import ChartLogo from './components/ChartLogo';
-import CssLogo from './components/CssLogo';
-import GitLogo from './components/GitLogo';
-import HtmlLogo from './components/HtmlLogo';
-import JestLogo from './components/JestLogo';
-import JsLogo from './components/JsLogo';
-import MaterialUILogo from './components/MaterialUILogo';
-import NodeLogo from './components/NodeLogo';
-import ParcelLogo from './components/ParcelLogo';
-import PostgresqlLogo from './components/PostgresqlLogo';
-import ReactBootstrapLogo from './components/ReactBootstrapLogo';
-import ReactLogo from './components/ReactLogo';
-import ReduxLogo from './components/ReduxLogo';
-import SassLogo from './components/SassLogo';
-import SequelizeLogo from './components/SequelizeLogo';
-import SqlLogo from './components/SqlLogo';
-import StyledComponentsLogo from './components/StyledComponentsLogo';
-import SvelteLogo from './components/SvelteLogo';
-import TsLogo from './components/TsLogo';
+import AngularLogo from './LogoComponents/AngularLogo';
+import AntDesignLogo from './LogoComponents/AntDesignLogo';
+import ChartLogo from './LogoComponents/ChartLogo';
+import CssLogo from './LogoComponents/CssLogo';
+import GitLogo from './LogoComponents/GitLogo';
+import HtmlLogo from './LogoComponents/HtmlLogo';
+import JestLogo from './LogoComponents/JestLogo';
+import JsLogo from './LogoComponents/JsLogo';
+import MaterialUILogo from './LogoComponents/MaterialUILogo';
+import NodeLogo from './LogoComponents/NodeLogo';
+import ParcelLogo from './LogoComponents/ParcelLogo';
+import PostgresqlLogo from './LogoComponents/PostgresqlLogo';
+import ReactBootstrapLogo from './LogoComponents/ReactBootstrapLogo';
+import ReactLogo from './LogoComponents/ReactLogo';
+import ReduxLogo from './LogoComponents/ReduxLogo';
+import SassLogo from './LogoComponents/SassLogo';
+import SequelizeLogo from './LogoComponents/SequelizeLogo';
+import SqlLogo from './LogoComponents/SqlLogo';
+import StyledComponentsLogo from './LogoComponents/StyledComponentsLogo';
+import SvelteLogo from './LogoComponents/SvelteLogo';
+import TsLogo from './LogoComponents/TsLogo';
 import imgDashboardOne from './img/dashboard-3.png';
 import imgDashboardTwo from './img/dashboard-4.png';
 import imgDashboardThree from './img/dashboard-5.png';
@@ -81,16 +81,18 @@ function ProjectOne(meshProps) {
   );
 
   return (
-    <mesh ref={ref}>
-      <Box position={[-2, 0, 0]} args={[1, 1, 1]} {...meshProps}>
-        <meshStandardMaterial map={texture1} attachArray="material" />
-        <meshStandardMaterial map={texture2} attachArray="material" />
-        <meshStandardMaterial map={texture3} attachArray="material" />
-        <meshStandardMaterial map={texture2} attachArray="material" />
-        <meshStandardMaterial map={texture1} attachArray="material" />
-        <meshStandardMaterial map={texture3} attachArray="material" />
-      </Box>
-    </mesh>
+    <>
+      <mesh ref={ref}>
+        <Box position={[0, 0, 0]} args={[3, 3, 3]} {...meshProps}>
+          <meshStandardMaterial map={texture1} attachArray="material" />
+          <meshStandardMaterial map={texture2} attachArray="material" />
+          <meshStandardMaterial map={texture3} attachArray="material" />
+          <meshStandardMaterial map={texture2} attachArray="material" />
+          <meshStandardMaterial map={texture1} attachArray="material" />
+          <meshStandardMaterial map={texture3} attachArray="material" />
+        </Box>
+      </mesh>
+    </>
   );
 }
 
@@ -102,41 +104,39 @@ function ProjectTwo(meshProps) {
 
   useFrame(
     () => (
-      (ref.current.rotation.z += 0.001),
-      (ref.current.rotation.x += 0.001),
-      (ref.current.rotation.y += 0.001)
+      (ref.current.rotation.z += 0.0),
+      (ref.current.rotation.x += 0.005),
+      (ref.current.rotation.y += 0.0)
     )
   );
 
   return (
-    <mesh ref={ref}>
-      <Box position={[2, 0, 0]} args={[1, 1, 1]} {...meshProps}>
-        <meshStandardMaterial map={texture1} attachArray="material" />
-        <meshStandardMaterial map={texture2} attachArray="material" />
-        <meshStandardMaterial map={texture3} attachArray="material" />
-        <meshStandardMaterial map={texture2} attachArray="material" />
-        <meshStandardMaterial map={texture1} attachArray="material" />
-        <meshStandardMaterial map={texture3} attachArray="material" />
-      </Box>
-    </mesh>
+    <>
+      <mesh ref={ref}>
+        <Box position={[0, 0, 0]} args={[1, 1, 1]} {...meshProps}>
+          <meshStandardMaterial map={texture1} attachArray="material" />
+          <meshStandardMaterial map={texture2} attachArray="material" />
+          <meshStandardMaterial map={texture3} attachArray="material" />
+          <meshStandardMaterial map={texture2} attachArray="material" />
+          <meshStandardMaterial map={texture1} attachArray="material" />
+          <meshStandardMaterial map={texture3} attachArray="material" />
+        </Box>
+      </mesh>
+    </>
   );
 }
 
 export default function App() {
   return (
-    <>
+    <div className="canvas-container">
       <Canvas style={{ height: '100vh' }}>
         <ambientLight />
         <OrbitControls />
         <Suspense fallback={null}>
           <ProjectOne />
-          <ProjectTwo />
+          {/* <ProjectTwo /> */}
         </Suspense>
-        <Group />
-        {/* <Text position={[-5, 3.5, 0]} fontSize="0.5">
-          Hi I'm Willem!
-        </Text> */}
       </Canvas>
-    </>
+    </div>
   );
 }
