@@ -11,6 +11,7 @@ import NodeLogo from './components/NodeLogo';
 import ParcelLogo from './components/ParcelLogo';
 import ReactBootstrapLogo from './components/ReactBootstrapLogo';
 import ReactLogo from './components/ReactLogo';
+import ReduxLogo from './components/ReduxLogo';
 
 function Group() {
   const ref = useRef();
@@ -33,6 +34,7 @@ function Group() {
       <ParcelLogo position={[-3.5, -1.4, -1]} />
       <ReactBootstrapLogo position={[-2, 2, -2]} />
       <ReactLogo position={[-2.2, 0, 0]} />
+      <ReduxLogo position={[2, 0, 0]} />
     </group>
   );
 }
