@@ -26,6 +26,9 @@ import TsLogo from './components/TsLogo';
 import imgDashboardOne from './img/dashboard-3.png';
 import imgDashboardTwo from './img/dashboard-4.png';
 import imgDashboardThree from './img/dashboard-5.png';
+import imgHexagonOne from './img/hexagon-generator-1.png';
+import imgHexagonTwo from './img/hexagon-generator-2.png';
+import imgHexagonThree from './img/hexagon-generator-3.png';
 
 function Group() {
   const ref = useRef();
@@ -63,7 +66,7 @@ function Group() {
   );
 }
 
-function Project(meshProps) {
+function ProjectOne(meshProps) {
   const ref = useRef();
   const texture1 = useLoader(THREE.TextureLoader, imgDashboardOne);
   const texture2 = useLoader(THREE.TextureLoader, imgDashboardTwo);
@@ -79,11 +82,35 @@ function Project(meshProps) {
 
   return (
     <mesh ref={ref}>
-      <Box
-        position={[0, 0, 0]}
-        args={[1, 1, 1]} // Width, Height and Depth of the box
-        {...meshProps} // All THREE.Mesh props are valid
-      >
+      <Box position={[-2, 0, 0]} args={[1, 1, 1]} {...meshProps}>
+        <meshStandardMaterial map={texture1} attachArray="material" />
+        <meshStandardMaterial map={texture2} attachArray="material" />
+        <meshStandardMaterial map={texture3} attachArray="material" />
+        <meshStandardMaterial map={texture2} attachArray="material" />
+        <meshStandardMaterial map={texture1} attachArray="material" />
+        <meshStandardMaterial map={texture3} attachArray="material" />
+      </Box>
+    </mesh>
+  );
+}
+
+function ProjectTwo(meshProps) {
+  const ref = useRef();
+  const texture1 = useLoader(THREE.TextureLoader, imgHexagonOne);
+  const texture2 = useLoader(THREE.TextureLoader, imgHexagonTwo);
+  const texture3 = useLoader(THREE.TextureLoader, imgHexagonThree);
+
+  useFrame(
+    () => (
+      (ref.current.rotation.z += 0.001),
+      (ref.current.rotation.x += 0.001),
+      (ref.current.rotation.y += 0.001)
+    )
+  );
+
+  return (
+    <mesh ref={ref}>
+      <Box position={[2, 0, 0]} args={[1, 1, 1]} {...meshProps}>
         <meshStandardMaterial map={texture1} attachArray="material" />
         <meshStandardMaterial map={texture2} attachArray="material" />
         <meshStandardMaterial map={texture3} attachArray="material" />
@@ -102,7 +129,8 @@ export default function App() {
         <ambientLight />
         <OrbitControls />
         <Suspense fallback={null}>
-          <Project />
+          <ProjectOne />
+          <ProjectTwo />
         </Suspense>
         <Group />
         {/* <Text position={[-5, 3.5, 0]} fontSize="0.5">
