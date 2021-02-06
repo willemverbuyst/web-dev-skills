@@ -11,6 +11,7 @@ import JsLogo from './components/JsLogo';
 import MaterialUILogo from './components/MaterialUILogo';
 import NodeLogo from './components/NodeLogo';
 import ParcelLogo from './components/ParcelLogo';
+import PostgresqlLogo from './components/PostgresqlLogo';
 import ReactBootstrapLogo from './components/ReactBootstrapLogo';
 import ReactLogo from './components/ReactLogo';
 import ReduxLogo from './components/ReduxLogo';
@@ -42,6 +43,7 @@ function Group() {
       <MaterialUILogo position={[-3, -1.5, 1]} />
       <NodeLogo position={[0, -1.5, 0]} />
       <ParcelLogo position={[-3.5, -1.4, -1]} />
+      <PostgresqlLogo position={[-0.5, 1.4, -3]} />
       <ReactBootstrapLogo position={[-2, 2, -2]} />
       <ReactLogo position={[-2.2, -3, 1]} />
       <ReduxLogo position={[2, 0, 0]} />
