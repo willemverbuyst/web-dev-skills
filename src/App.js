@@ -2,16 +2,20 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HexagonGenerator from './Pages/HexagonGenerator';
 import Home from './Pages/Home';
+import NavBar from './Components/NavBar';
 import SchoolDashboard from './Pages/SchoolDashboard';
 import Skills from './Pages/Skills';
 
 export default function App() {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/hexagongenerator" component={HexagonGenerator} />
-      <Route exact path="/schooldashboard" component={SchoolDashboard} />
-      <Route exact path="/skills" component={Skills} />
-    </Switch>
+    <>
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/hexagongenerator" component={HexagonGenerator} />
+        <Route exact path="/schooldashboard" component={SchoolDashboard} />
+        <Route exact path="/skills" component={Skills} />
+      </Switch>
+    </>
   );
 }
