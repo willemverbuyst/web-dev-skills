@@ -3,15 +3,15 @@ import React, { useRef, Suspense } from 'react';
 import { Canvas, useFrame, useLoader} from 'react-three-fiber';
 import { OrbitControls, Box, Text } from '@react-three/drei';
 
-import imgDashboardOne from '../img/dashboard-3.png';
-import imgDashboardTwo from '../img/dashboard-4.png';
-import imgDashboardThree from '../img/dashboard-5.png';
+import imgHexagonOne from '../img/hexagon-generator-1.png';
+import imgHexagonTwo from '../img/hexagon-generator-2.png';
+import imgHexagonThree from '../img/hexagon-generator-3.png';
 
-function ProjectOne(meshProps) {
+function ProjectTwo(meshProps) {
   const ref = useRef();
-  const texture1 = useLoader(THREE.TextureLoader, imgDashboardOne);
-  const texture2 = useLoader(THREE.TextureLoader, imgDashboardTwo);
-  const texture3 = useLoader(THREE.TextureLoader, imgDashboardThree);
+  const texture1 = useLoader(THREE.TextureLoader, imgHexagonOne);
+  const texture2 = useLoader(THREE.TextureLoader, imgHexagonTwo);
+  const texture3 = useLoader(THREE.TextureLoader, imgHexagonThree);
 
   useFrame(
     () => (
@@ -37,14 +37,14 @@ function ProjectOne(meshProps) {
   );
 }
 
-export default function SchoolDashboard() {
+export default function HexagonGenerator() {
   return (
     <div className="canvas-container">
       <Canvas style={{ height: '100vh' }}>
         <ambientLight />
         <OrbitControls />
         <Suspense fallback={null}>
-          <ProjectOne />
+          <ProjectTwo />
         </Suspense>
       </Canvas>
     </div>
