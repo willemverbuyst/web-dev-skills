@@ -30,7 +30,6 @@ Because I wanted to create this list in React I will use [react-three-fiber](htt
 - [x] React Bootstrap
 - [x] Node JS
 - [x] Jest
-- [ ] React Native
 - [x] SQL
 - [x] GraphOL
 - [x] Sequelize
