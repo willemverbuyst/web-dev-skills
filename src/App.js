@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
-import { Canvas, useFrame } from 'react-three-fiber';
-import { OrbitControls, Stars } from 'drei';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { OrbitControls, Stars } from '@react-three/drei';
+
 import ReactLogo from './components/ReactLogo';
 import ChartLogo from './components/ChartLogo';
 import JavaScriptLogo from './components/JavaScriptLogo';

@@ -4,15 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "drei": "0.0.60",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "react-three-fiber": "^4.2.12",
-    "three": "^0.137.0"
+    "@react-three/drei": "^8.8.3",
+    "@react-three/fiber": "^7.0.26",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "three": "^0.137.5"
   },
   "scripts": {
     "predeploy": "npm run build",
