@@ -1,8 +1,7 @@
 {
-  "homepage": "http://willemverbuyst.github.io/threeJS-react-list",
-  "name": "threejs-react-list",
-  "version": "0.1.0",
-  "private": true,
+  "homepage": "http://willemverbuyst.github.io/web-dev-skills",
+  "name": "web-dev-skills",
+  "version": "0.1.1",
   "dependencies": {
     "@react-three/drei": "^8.8.3",
     "@react-three/fiber": "^7.0.26",
@@ -12,8 +11,6 @@
     "three": "^0.137.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,8 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
   }
 }
