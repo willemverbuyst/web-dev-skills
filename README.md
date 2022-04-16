@@ -4,7 +4,7 @@ http://willemverbuyst.github.io/web-dev-skills
 
 ## What is this?
 
-A list of some of the skills, languages, packages, tools etc. I have learned to work with during my 11 week JavaScript bootcamp at codaisseur.
+A list of some of the skills, languages, packages, tools etc. I have learned to work with during my 11 week JavaScript bootcamp at Codaisseur.
 
 [Three.js](threejs.org) is a cross-browser JavaScript library and application programming interface (API) used to create and display animated 3D computer graphics in a web browser. Source: [Wikipedia](https://en.wikipedia.org/wiki/Three.js)
 
