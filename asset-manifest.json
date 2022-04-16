@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/web-dev-skills/static/css/main.f192431c.css",
+    "main.js": "/web-dev-skills/static/js/main.930120f6.js",
+    "static/media/redux.png": "/web-dev-skills/static/media/redux.f2a751d981767bbdd090.png",
+    "static/media/sequelize.png": "/web-dev-skills/static/media/sequelize.4bf2a03ad7e78032c1c4.png",
+    "static/media/jest.png": "/web-dev-skills/static/media/jest.076fb560d115be012927.png",
+    "static/media/sass.png": "/web-dev-skills/static/media/sass.6176476f1550a53cf39d.png",
+    "static/media/css.png": "/web-dev-skills/static/media/css.15ec9aa960f0d4860239.png",
+    "static/media/react-bootstrap.png": "/web-dev-skills/static/media/react-bootstrap.2e9b6c0f6c0193a3da12.png",
+    "static/media/sql.png": "/web-dev-skills/static/media/sql.827677bdc571dabfd076.png",
+    "static/media/node-js.png": "/web-dev-skills/static/media/node-js.7b3ba773029db62a5e76.png",
+    "static/media/js.png": "/web-dev-skills/static/media/js.8de038df3f74d5b95919.png",
+    "static/media/parcel.png": "/web-dev-skills/static/media/parcel.249f04e89c3b2121c689.png",
+    "static/media/html.png": "/web-dev-skills/static/media/html.9700653b88c137972d14.png",
+    "static/media/styled-components.png": "/web-dev-skills/static/media/styled-components.b5baee1769089ff8079e.png",
+    "index.html": "/web-dev-skills/index.html",
+    "main.f192431c.css.map": "/web-dev-skills/static/css/main.f192431c.css.map",
+    "main.930120f6.js.map": "/web-dev-skills/static/js/main.930120f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f192431c.css",
+    "static/js/main.930120f6.js"
+  ]
+}
