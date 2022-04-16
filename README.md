@@ -1,6 +1,6 @@
 # 11w bootcamp skills (2020)
 
-http://willemverbuyst.github.io/threeJS-react-list
+http://willemverbuyst.github.io/web-dev-skills
 
 ## What is this?
 
