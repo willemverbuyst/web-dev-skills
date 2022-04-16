@@ -22,6 +22,7 @@ function Group() {
   const ref = useRef();
   useFrame(
     () => (
+      // eslint-disable-next-line no-sequences
       (ref.current.rotation.z += 0.0005),
       (ref.current.rotation.x += 0.005),
       (ref.current.rotation.y += 0.007)
