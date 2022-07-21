@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/willemverbuyst/web-dev-skills/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/willemverbuyst/web-dev-skills/actions/workflows/pages/pages-build-deployment)
+
 # 11w bootcamp skills (2020)
 
 http://willemverbuyst.github.io/web-dev-skills
