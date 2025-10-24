@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import sassL from '../img/sass.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import sassL from "../img/sass.png";
 
 export default function SassLogo(props) {
   return (

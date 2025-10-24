@@ -1,6 +1,5 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import parcelL from '../img/parcel.png';
+import { Html } from "@react-three/drei";
+import parcelL from "../img/parcel.png";
 
 export default function ParcelLogo(props) {
   return (

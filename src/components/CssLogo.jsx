@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import cssL from '../img/css.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import cssL from "../img/css.png";
 
 export default function CssLogo(props) {
   return (

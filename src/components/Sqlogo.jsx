@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import sqlL from '../img/sql.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import sqlL from "../img/sql.png";
 
 export default function SqlLogo(props) {
   return (

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import styledComponentsL from '../img/styled-components.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import styledComponentsL from "../img/styled-components.png";
 
 export default function StyledComponentsLogo(props) {
   return (

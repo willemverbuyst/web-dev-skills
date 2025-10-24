@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import reduxL from '../img/redux.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import reduxL from "../img/redux.png";
 
 export default function ReduxLogo(props) {
   return (

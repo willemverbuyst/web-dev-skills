@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import jestL from '../img/jest.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import jestL from "../img/jest.png";
 
 export default function JestLogo(props) {
   return (

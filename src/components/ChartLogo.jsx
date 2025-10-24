@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import chartL from '../img/chart-js.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import chartL from "../img/chart-js.png";
 
 export default function ChartLogo(props) {
   return (

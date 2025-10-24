@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import javaScriptL from '../img/js.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import javaScriptL from "../img/js.png";
 
 export default function JavaScriptLogo(props) {
   return (

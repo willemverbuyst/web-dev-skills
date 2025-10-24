@@ -1,6 +1,6 @@
-import React from 'react';
-import { Html } from '@react-three/drei';
-import gitL from '../img/git.png';
+import React from "react";
+import { Html } from "@react-three/drei";
+import gitL from "../img/git.png";
 
 export default function GitLogo(props) {
   return (
