@@ -5,10 +5,13 @@
   "dependencies": {
     "@react-three/drei": "^8.8.3",
     "@react-three/fiber": "^7.0.26",
+    "@vitejs/plugin-legacy": "^7.2.1",
+    "@vitejs/plugin-react": "^5.0.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "^5.0.1",
-    "three": "^0.137.5"
+    "three": "^0.137.5",
+    "vite-plugin-pwa": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
