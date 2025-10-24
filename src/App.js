@@ -1,22 +1,22 @@
-import React, { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { useRef } from "react";
 
-import ReactLogo from "./components/ReactLogo";
 import ChartLogo from "./components/ChartLogo";
-import JavaScriptLogo from "./components/JavaScriptLogo";
-import GitLogo from "./components/GitLogo";
-import ReduxLogo from "./components/ReduxLogo";
-import HtmlLogo from "./components/HtmlLogo";
 import CssLogo from "./components/CssLogo";
-import SassLogo from "./components/SassLogo";
-import NodeJsLogo from "./components/NodeJsLogo";
+import GitLogo from "./components/GitLogo";
+import HtmlLogo from "./components/HtmlLogo";
+import JavaScriptLogo from "./components/JavaScriptLogo";
 import JestLogo from "./components/JestLogo";
+import NodeJsLogo from "./components/NodeJsLogo";
 import ParcelLogo from "./components/ParcelLogo";
-import SqlLogo from "./components/Sqlogo";
-import ReactBootstrapLogo from "./components/ReachtBootstrapLogo";
-import StyledComponentsLogo from "./components/StyledComponentsLogo";
+import ReactBootstrapLogo from "./components/ReactBootstrapLogo";
+import ReactLogo from "./components/ReactLogo";
+import ReduxLogo from "./components/ReduxLogo";
+import SassLogo from "./components/SassLogo";
 import SequelizeLogo from "./components/SequelizeLogo";
+import SqlLogo from "./components/SqlLogo";
+import StyledComponentsLogo from "./components/StyledComponentsLogo";
 
 function Group() {
   const ref = useRef();
