@@ -1,7 +1,6 @@
 {
   "homepage": "http://willemverbuyst.github.io/web-dev-skills",
   "name": "web-dev-skills",
-  "type": "module",
   "version": "0.1.1",
   "dependencies": {
     "@react-three/drei": "^10.7.6",
