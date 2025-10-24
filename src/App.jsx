@@ -21,13 +21,11 @@ import StyledComponentsLogo from "./components/StyledComponentsLogo";
 function Group() {
   const ref = useRef();
   useFrame(
-    () =>
-      // eslint-disable-next-line no-sequences
-      (
-        (ref.current.rotation.z += 0.0005),
-        (ref.current.rotation.x += 0.005),
-        (ref.current.rotation.y += 0.007)
-      ),
+    () => (
+      (ref.current.rotation.z += 0.0005),
+      (ref.current.rotation.x += 0.005),
+      (ref.current.rotation.y += 0.007)
+    ),
   );
   return (
     <group ref={ref}>
@@ -52,14 +50,12 @@ function Group() {
 
 export default function App() {
   return (
-    <>
-      <Canvas style={{ height: "100vh" }}>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Group />
-        <Stars />
-        <OrbitControls />
-      </Canvas>
-    </>
+    <Canvas style={{ height: "100vh" }}>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <Group />
+      <Stars />
+      <OrbitControls />
+    </Canvas>
   );
 }
