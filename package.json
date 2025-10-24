@@ -3,13 +3,13 @@
   "name": "web-dev-skills",
   "version": "0.1.1",
   "dependencies": {
-    "@react-three/drei": "^8.8.3",
-    "@react-three/fiber": "^7.0.26",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
     "@vitejs/plugin-react": "^5.0.4",
     "prettier": "^3.6.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "three": "^0.137.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.180.0",
     "vite": "^7.1.12"
   },
   "scripts": {
