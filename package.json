@@ -10,9 +10,10 @@
     "prettier": "^3.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.1",
     "three": "^0.137.5",
-    "vite-plugin-pwa": "^1.1.0"
+    "vite": "^7.1.12",
+    "vite-plugin-pwa": "^1.1.0",
+    "vite-plugin-svgr": "^4.5.0"
   },
   "scripts": {
     "eject": "react-scripts eject",
